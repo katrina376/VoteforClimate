@@ -1,0 +1,52 @@
+/* MUST BE USED WITH THE GENERAL FILE */
+#banner img {
+	margin: 1rem 5%;
+	width: 90%;
+}
+#slideBox {
+	position: relative;
+}
+#slideView {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+#slide {
+	position: absolute;
+	width: 500%;
+}
+#slide img{
+	width: 20%;
+}
+#slideBtn {
+	position: relative;
+	text-align: center;
+}
+
+.slideBtnIcn { display: inline-block; background: url('../img/icnsprite.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; background-position: -51px -140px; width: 21px; height: 21px; margin: 0.5rem;}
+.slideBtnIcn.active { background-position: -51px -162px; width: 21px; height: 21px; }
+
+#agendaList {
+	list-style: none;
+}
+.agenda {
+	position: relative;
+	display: block;
+	margin: 2.5%;
+	background: url('../img/nia.png') no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+.agenda .title {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	background-color: #395C94;
+	text-align: right;
+	color: #FFFFFF;
+	padding: 1rem;
+}
+.agenda .title:before {
+	content: '/ ';
+}

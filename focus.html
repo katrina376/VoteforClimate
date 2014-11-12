@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+<title>Now to Act, Vote for Climate 現在加入氣候選戰！</title>
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+<!--[if lte IE 8]>
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+<!--<![endif]-->
+<link rel=stylesheet type="text/css" href="./css/vfc-v1.css">
+<link rel=stylesheet type="text/css" href="./css/vfc-action-v1.css">
+</head>
+
+<body>
+<div id="header">
+	<div id="navbar"  class="pure-g">
+		<a href="./template.html" class="pure-u-1-4">[icon] 環境專案</a>
+		<a href="./template.html" class="pure-u-1-4">[icon] 環境串聯地圖</a>
+		<a href="./template.html" class="pure-u-1-4">[icon] 候選人有話說</a>
+		<a href="./template.html" class="pure-u-1-4">[icon] 關於我們</a>
+	</div>
+	<div id="banner" class="pure-g">
+		<div class="pure-u-0-1 pure-u-md-1-24"></div>
+		<div class="pure-u-1-1 pure-u-md-22-24">
+			<div id="pageTitle">
+				<p>天度的眼的以總很式。關環學？好笑兩反友場、期標選向級力突陽哥分為說票解物自機標路利的備門戰走兒社對下人呢是臺我獲輕想最兒，開地定海中你意上，下過屋成張營受音者系總發一裝活了那研戰的數司行行，買能詩本親他：除最通高人它……上行評數很般今種體幾：路臺國成，查流結直現通就他西失資信希約往，賣並成；音科源軍灣痛費立全專叫的、裡天把上經！這筆中件手嗎量臺年我常子表春，什力們出會保現不有理光的。</p>
+			</div>
+		</div>
+		<div class="pure-u-0-1 pure-u-md-1-24"></div>
+	</div>
+</div><!--header-->
+
+<div id="content" class="pure-g">
+<div class="pure-u-0-1 pure-u-md-1-24"></div>
+<div class="pure-u-1-1 pure-u-md-22-24">
+	<div id="search">
+		<form class="pure-form">
+			<label for="division1">縣市：</label>
+			<select id="division1">
+				<option>不分縣市</option>
+				<option>基隆市</option>
+				<option>新北市</option>
+				<option>台北市</option>
+			</select>
+			<label for="division2">　鄉鎮市區：</label>
+			<select id="division2">
+				<option>不分區域</option>
+				<option>ＯＯ區</option>
+				<option>ＸＸ區</option>
+			</select>
+			<label for="keyword">　關鍵字（店名、團體或地點）：</label>
+			<input id="keyword" type="text">
+			<button type="submit" class="button">開始搜尋</button>
+		</form>
+	</div>
+	<div id="map-canvas"></div>
+</div>
+<div class="pure-u-0-1 pure-u-md-1-24"></div>
+</div><!--content-->
+
+<div id="footer">
+<ul>
+	<li><a href="./template.html">環境專案</a></li>
+	<li><a href="./template.html">環境串聯地圖</a></li>
+	<li><a href="./template.html">候選人有話說</a></li>
+	<li><a href="./template.html">關於我們</a></li>
+</ul>
+<center>Copyright (c) [COPYRIGHT]</center>
+</div><!--footer-->
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+<script type="text/javascript" src="./js/markerclusterer.js"></script>
+<script>
+// the db is needed
+var map;
+function initialize() {
+	var mapOptions = {
+		zoom: 7,
+		center: new google.maps.LatLng(23.7, 121)
+	};
+	map = new google.maps.Map(document.getElementById('map-canvas'),mapOptions);
+};
+/*var markers = [];
+for (var i = 0; i < 100; i++) {
+	var latLng = new google.maps.LatLng(data.photos[i].latitude,data.photos[i].longitude);
+	var marker = new google.maps.Marker({'position': latLng});
+	markers.push(marker);
+};
+var markerCluster = new MarkerClusterer(map, markers);*/
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+
+</body>
+</html>

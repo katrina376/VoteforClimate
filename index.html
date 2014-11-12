@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+<title>Now to Act, Vote for Climate 現在加入氣候選戰！</title>
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+<!--[if lte IE 8]>
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+<!--<![endif]-->
+<link rel="stylesheet" type="text/css" href="./css/vfc-v3.css">
+<link rel="stylesheet" type="text/css" href="./css/vfc-index-v3.css">
+</head>
+
+<body>
+<div id="verticalBar" class="pure-menu pure-menu-open"> <!-- out of view when using computer -->
+	<a class="pure-menu-heading">導覽列</a>
+	<ul>
+		<li><a href="./index.php"><div class="icn-home"></div><span class="shift">首頁</span></a></li>
+		<li><a href="./agenda.php"><div class="icn-agenda"></div><span class="shift">環境專案</span></a></li>
+		<li><a href="./action.php"><div class="icn-action"></div><span class="shift">環境串聯地圖</span></a></li>
+		<li><a href="./candidate.php"><div class="icn-candidate"></div><span class="shift">候選人有話說</span></a></li>
+		<li><a href="./about.php"><div class="icn-about"></div><span class="shift">關於我們</span></a></li>
+    </ul>
+</div>
+<div id="shadow"></div>
+<div id="navbar" class="pure-g">
+	<a href="./index.php" class="pure-u-1-5 computer"><div class="icn-home"></div><span class="shift">首頁</span></a>
+	<a href="./agenda.php" class="pure-u-1-5 computer"><div class="icn-agenda"></div><span class="shift">環境專案</span></a>
+	<a href="./action.php" class="pure-u-1-5 computer"><div class="icn-action"></div><span class="shift">環境串聯地圖</span></a>
+	<a href="./candidate.php" class="pure-u-1-5 computer"><div class="icn-candidate"></div><span class="shift">候選人有話說</span></a>
+	<a href="./about.php" class="pure-u-1-5 computer"><div class="icn-about"></div><span class="shift">關於我們</span></a>
+	<a href="#" class="pure-u-1-4" id="mobile">[icn]</a>
+</div>
+<!--header-->
+
+
+<div id="banner">
+	<img src="./img/banner.jpg" alt="Now to Act, Vote for Climate"/>
+</div>
+
+<div id="content">
+
+<div id="slideBox">
+	<div id="slideView">
+		<div id="slide">
+			<a href="1"><img src="./img/Lighthouse.jpg"/></a><a href="2"><img src="./img/Lighthouse.jpg"/></a><a href="3"><img src="./img/Lighthouse.jpg"/></a><a href="4"><img src="./img/Lighthouse.jpg"/></a><a href="5"><img src="./img/Lighthouse.jpg"/></a>
+		</div>
+	</div>
+	<div id="slideBtn">
+		<div class="slideBtnIcn active"></div>
+		<div class="slideBtnIcn"></div>
+		<div class="slideBtnIcn"></div>
+		<div class="slideBtnIcn"></div>
+		<div class="slideBtnIcn"></div>
+	</div>
+</div>
+<div id="agendaList" class="pure-g">
+	<div class="agendaBlock pure-u-md-1-3 pure-u-1-2">
+		<a href="#" class="agenda needResize">
+			<img src="./img/Lighthouse.jpg"/>
+			<div class="title">example</div>
+		</a>
+	</div>
+	<div class="agendaBlock pure-u-md-1-3 pure-u-1-2">
+		<a href="#" class="agenda needResize">
+			<img src="./img/Lighthouse.jpg"/>
+			<div class="title">example</div>
+		</a>
+	</div>
+	<div class="agendaBlock pure-u-md-1-3 pure-u-1-2">
+		<a href="#" class="agenda needResize">
+			<img src="./img/Lighthouse.jpg"/>
+			<div class="title">example</div>
+		</a>
+	</div>
+</div>
+
+</div><!--content-->
+
+
+<div id="footer">
+<ul>
+	<li><a href="./index.php">環境專案</a></li>
+	<li><a href="./focus.php">環境串聯地圖</a></li>
+	<li><a href="./candidate.php">候選人有話說</a></li>
+	<li><a href="./about.php">關於我們</a></li>
+</ul>
+<center>Copyright (c) [COPYRIGHT]</center>
+</div><!--footer-->
+
+<div id="topIcn"></div>
+
+<script src="./js/jquery-1.11.1.min.js"></script>
+<script src="./js/quo.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/easing/EasePack.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+	$("#navbar #mobile" ).hover(function() {
+		$('#navbar #mobile').addClass('hover');
+		}, function() {
+		$('#navbar #mobile').removeClass('hover');
+	});
+	$('#navbar #mobile').bind("click",verIn);
+	bar = $('#verticalBar');
+	function verIn() {
+		var scrollX = $(window).scrollLeft();
+		var scrollY = $(window).scrollTop();
+		TweenLite.to(bar, 0.5, {left:0, ease:Power2.easeInOut});
+		$('#shadow').css('left','0');
+		$(window).scrollLeft(scrollX);
+		$(window).scrollTop(scrollY);
+		//$('body').bind('touchmove', function(e){e.preventDefault()});
+		$('#shadow').bind('click',verOut);
+		$$('body').swipeLeft(verOut);
+	};
+	function verOut() {
+		$('#navbar #mobile').removeClass('hover');
+		var scrollX = $(window).scrollLeft();
+		var scrollY = $(window).scrollTop();
+		TweenLite.to(bar, 0.5, {left:"-60%", ease:Power2.easeInOut});
+		$(window).scrollLeft(scrollX);
+		$(window).scrollTop(scrollY );
+		$('#shadow').css('left','-100%');
+		$('body').css('overflow', 'auto');
+		$('body').unbind('touchmove');
+	};
+
+	$('#topIcn').bind("click",function(){
+		$(window).scrollTop(0);
+	});$('.agenda').height($('.agenda').width());
+	resizer();
+	$(window).resize(function(){
+		$('.agenda').height($('.agenda').width());
+		resizer();
+	});
+	// slide
+	var present = 0;
+	var clock = setInterval(timer,5000);
+	var distance = $('body').width();
+	slide = $('#slide');
+
+	$('#slideView').height(distance/2.5);
+	$('#slide').height(distance/2.5);
+
+	$(window).resize(function(){
+		distance = $('body').width();
+		$('#slide img').width(distance);
+		$('#slideView').height(distance/2.5);
+		slideChange();
+	});
+
+	for (i = 0; i < $('.slideBtnIcn').length; i++) {
+		$('.slideBtnIcn:eq('+i+')').bind('click',{id:i},slideClick);
+	};
+	$$('#slideView').swipeLeft(function(){
+		present = present + 1;
+		if (present >= $('#slide img').length) {
+			present = present - 1;
+		} else {
+			clearInterval(clock);
+			clock = setInterval(timer,5000);
+			slideChange();
+		};
+	});
+	$$('#slideView').swipeRight(function(){
+		present = present - 1;
+		if (present < 0) {
+			present = present + 1;
+		} else {
+			clearInterval(clock);
+			clock = setInterval(timer,5000);
+			slideChange();
+		};
+	});
+	function timer(){
+		present++;
+		if (present >= $('#slide img').length) {
+			present = 0;
+		}
+		slideChange();
+	}
+	function slideClick(e){
+		present = e.data.id;
+		clearInterval(clock);
+		clock = setInterval(timer,5000);
+		slideChange();
+	}
+	function slideChange(){
+		$(".slideBtnIcn:not("+present+")").removeClass('active')      // off
+		$(".slideBtnIcn:eq("+present+")").addClass('active')     // on
+		TweenLite.to(slide, 0.5, {left:-distance*present, ease:Power2.easeInOut});
+	}
+});
+</script>
+<script type="text/javascript" src="./js/resizer.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+	resizer();
+	$(window).resize(function(){
+		$('.needResize').height($('.needResize').height());
+		resizer();
+	});
+});
+</script>
+</body>
+</html>

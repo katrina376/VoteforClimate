@@ -1,0 +1,100 @@
+/* MUST BE USED WITH THE GENERAL FILE */
+.pageTitle {
+	position: relative;
+}
+.pageTitle h1 {
+	text-align: center;
+}
+.eventContent {
+	position: relative;
+	background-color: #D8D8D8;
+	color: #000000;
+	text-decoration: none;
+	overflow: hidden;
+}
+.eventContent:hover {
+	background-color: #D8D8D8; 
+	color: #000000;
+}
+.eventContent:active {
+	background-color: #AFAFAF; 
+	color: #000000;
+}
+.eventDate {
+	position: relative;
+	text-align: right;
+}
+.eventDate h4:after {
+	content:'\00a0\00a0\00a0\00a0';
+}
+.eventDate .corner {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 1rem solid transparent;
+	border-top-color: #D8D8D8;
+	border-right-color: #D8D8D8;
+	top: 0;
+	right: 0;
+}
+.eventText {
+	position: relative;
+	padding: 1rem 2rem;
+}
+.eventCover {
+	margin: -1rem -2rem 1rem 1rem;
+	float: right;
+	width: 50%;
+	overflow: hidden;
+}
+@media screen and (max-width: 48rem) {
+	.eventTitle {
+		position: relative;
+		top: 0;
+		padding-left: 5.8rem;
+	}
+}
+.eventFoot {
+	clear: none;
+	position: absolute;
+	background-color: blue;
+	width: 50%;
+	height: 8rem;
+	left: 0;
+	bottom: 0;
+	background: -moz-linear-gradient(top,  rgba(216,216,216,0) 0%, rgba(216,216,216,1) 50%, rgba(216,216,216,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(216,216,208,0)), color-stop(50%,rgba(216,216,216,1)), color-stop(100%,rgba(216,216,216,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(216,216,216,0) 0%,rgba(216,216,216,1) 50%,rgba(216,216,216,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(216,216,216,0) 0%,rgba(216,216,216,1) 50%,rgba(216,216,216,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(216,216,216,0) 0%,rgba(216,216,216,1) 50%,rgba(216,216,216,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(216,216,216,0) 0%,rgba(216,216,216,1) 50%,rgba(216,216,216,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8d8d8', endColorstr='#d8d8d8',GradientType=0 ); /* IE6-9 */
+}
+.eventFoot.active {
+	background: -moz-linear-gradient(top,  rgba(175,175,175,0) 0%, rgba(175,175,175,1) 50%, rgba(175,175,175,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(175,175,175,0)), color-stop(50%,rgba(175,175,175,1)), color-stop(100%,rgba(175,175,175,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(175,175,175,0) 0%,rgba(175,175,175,1) 50%,rgba(175,175,175,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(175,175,175,0) 0%,rgba(175,175,175,1) 50%,rgba(175,175,175,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(175,175,175,0) 0%,rgba(175,175,175,1) 50%,rgba(175,175,175,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(175,175,175,0) 0%,rgba(175,175,175,1) 50%,rgba(175,175,175,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8d8d8', endColorstr='#d8d8d8',GradientType=0 ); /* IE6-9 */
+}
+.eventFoot img {
+	position: absolute;
+	right: -59px;
+	bottom: 0;
+	display: none;
+}
+.eventDiv {
+	position: relative;
+	height: 1rem;
+}
+#eventShadow { 
+	display: none;
+	position: absolute;
+	z-index: 30;
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	top: 0;
+	bottom: 0;
+}

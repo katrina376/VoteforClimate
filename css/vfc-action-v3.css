@@ -1,0 +1,44 @@
+/* MUST BE USED WITH THE GENERAL FILE */
+#start { position: relative; display: inline-block; background: url('../img/icnsprite.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; background-position: -1px -370px; width: 44px; height: 43px; top: 5.5px;}
+#search {
+	position: relative;
+	margin: 1rem 0;
+	display: block;
+}
+#keyword {
+	position: relative;
+	border: none;
+	width: 100%;
+	height: 66px;
+	background-color: #FBE381;
+	border-radius: 33px;
+	text-indent: 2rem;
+}
+#submit {
+	display: block;
+	position: absolute;
+	border: none;
+	top: 0;
+	right: 0;
+	height: 66px;
+	background-color: #F4D240;
+	border-radius: 0 33px 33px 0;
+	vertical-align: middle;
+	padding: 0.5rem 1rem;
+}
+#map-canvas {
+	margin-top: 1rem;
+	position: relative;
+	height: 30rem;
+	padding: 0px;
+}
+#links .location {
+	display: block;
+	position: relative;
+	margin: 1rem 0;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	background-color: #D8D8D8;
+	text-decoration: none;
+}
+#links .arrow { position: absolute; display: inline-block; background: url('../img/icnsprite.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; top: 15px; right: 1rem; background-position: -47px -218px; width: 20px; height: 31px; }

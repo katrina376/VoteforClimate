@@ -1,0 +1,64 @@
+/* MUST BE USED WITH THE GENERAL FILE */
+#pageTitle {
+	position: relative;
+	text-align: center;
+}
+#pageTitle #button {
+	display: inline-block;
+	font-weight: normal;
+	font-size: 1.2rem;
+	color: #000000;
+	text-decoration: none;
+	margin-left: 3rem;
+	padding: 0.5rem 1rem;
+	background-color: #FBE381;
+	border-width: 0;
+	height: 3rem;
+	bottom: 0;
+	right: 0;
+}
+#pageTitle #button:hover {
+	background-color: #F2DC6F;
+}
+#arrow, #quote-up, #quote-down { display: inline-block; background: url('../img/icnsprite.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+#arrow { margin-top: 0.5rem; background-position: -47px -186px; width: 27px; height: 31px; }
+#subTitle {
+	position: relative;
+	text-align: center;
+	margin: 1rem auto;
+	padding: 2rem 0;
+}
+#subTitle #quote-up { position: absolute; background-position: -1px -0px; width: 76px; height: 69px; top: 1rem; left: 1rem;}
+#subTitle #quote-down { position: absolute; background-position: -1px -70px; width: 67px; height: 69px; right: 1rem; bottom: 1rem;}
+.candidate.a-1, .candidate.c-3 {
+	background-color: #F2DC6F;
+}
+.candidate.c-1, .candidate.a-3 {
+	background-color: #2C4B77;
+	color: #FFFFFF;
+}
+.candidate.b-2 {
+	background-color: #D8D8D8;
+}
+.candidateIdentity {
+	text-align: center;
+	margin: 1rem;
+}
+.candidateIcon {
+	position: relative;
+	margin: 0 auto;
+	border-radius: 50%;
+	height: 16em;
+	width: 16em;
+	overflow: hidden;
+	border-width: 0;
+}
+.candidateIcon img {
+	max-height: 100%;
+}
+@media screen and (max-width: 48rem) {
+	.candidateIcon {
+		height: 8em;
+		width: 8em;
+	}
+}

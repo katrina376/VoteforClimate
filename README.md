@@ -8,3 +8,27 @@
 + 「政策」喚起大家對更多氣候政策（調適＋減緩）的重視
 
 Hackpad: https://g0v.hackpad.com/-Vote-for-Climate-4ac9ap7zhrn
+
+
+---------------------
+NOTES:
+# view
+(1) index
+	* agenda list
+(2) agenda
+	* event list
+(3) event
+	* candidate
+(4) action
+(5) focus
+(6) candidate
+(7) about
+
+php6 / html5
+
+** for action map
+db needed: location(latLng), division(1,2), title, organization, keywords, date
+
+# model
+
+# controller
