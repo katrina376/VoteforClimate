@@ -1,0 +1,63 @@
+html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
+    font-family: Arial, "微軟正黑體", msjh, "Microsoft JhengHei", sans-serif;
+}
+body {
+	margin: 0 auto;
+	width: 72rem;
+	line-height: 1.6;
+}
+nav {
+	text-align: center;
+	padding: 0 3rem;
+}
+nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+nav ul li {
+	display: inline-block;
+}
+nav a {
+	display: inline-block;
+	padding: 1rem 2rem;
+	text-align: center;
+	color: #000;
+	text-decoration: none;
+}
+nav a:hover, nav a:active, nav a:visited {
+	color: #000;
+}
+nav a.now {
+	font-weight: bold;
+}
+nav ul li ul.navdrop {
+	display: none;
+	position: absolute;
+	z-index: 10;
+	background: #DDD;
+	text-align: left;
+	overflow: hidden;
+	margin-left: 2rem;
+}
+nav ul li ul.navdrop li {
+	display: list-item;
+}
+nav ul li ul.navdrop li a {
+	text-align: left;
+	padding: 0.2rem 1rem;
+	margin: 0.3rem 0;
+	width: 100%;
+	font-size: 1rem;
+}
+nav ul li ul.navdrop li a:hover {
+	background: #FFF;
+}
+article {
+	margin: 3rem 0;
+}
+ul.inline li {
+	display: inline-block;
+	padding: 1rem;
+	background: #F00;
+}

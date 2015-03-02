@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pages>
+	<page>
+		<title>首頁</title>
+		<sections>
+			<section>活動企劃</section>
+			<section>現在就能支持我們</section>
+			<section>合作夥伴</section>
+		</sections>
+	</page>
+	<page>
+		<title>活動企劃</title>
+		<sections>
+			<section>政策研究</section>
+			<section>氣候行動</section>
+			<section>綠色工作(Green Job)</section>
+			<section>COP</section>
+			<section>活動資訊</section>
+		</sections>
+	</page>
+	<page>
+		<title>認識氣候變遷</title>
+	</page>
+	<page>
+		<title>環境串聯地圖</title>
+	</page>
+	<page>
+		<title>TWYCC活動日曆</title>
+	</page>
+	<page>
+		<title>關於我們</title>
+		<sections>
+	    	<section>我們是誰</section>
+	    	<section>團隊介紹</section>
+	    	<section>大事紀</section>
+	    	<section>活動成果</section>
+	    	<section>聯絡我們</section>
+	    	<section>加入我們</section>
+	    </sections>
+	</page>
+</pages>

@@ -1,9 +1,2 @@
-VoteforClimate/
-design/
-v1/
-v2/
-img/*/
-css/old/
-*.php
-*.zip
-*.db
+data/
+VFC/

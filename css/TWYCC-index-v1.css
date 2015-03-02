@@ -1,0 +1,58 @@
+article header {
+	text-align: center;
+	position: relative;
+}
+article hr {
+	position: absolute;
+	width: 100%;
+	top: 2.4rem;
+	border: 1.6rem;
+	background: #AAA;
+	height: 1px;
+	z-index: -1;
+}
+article span {
+	padding: 0 2rem;
+	background: #FFF;
+}
+.activity {
+	background: #AAA;
+	height: 24rem;
+	overflow: hidden;
+	margin: 0.5rem 0;
+}
+.activity header {
+	background: #DDD;
+	color: #666;
+}
+.activity figure {
+	background: #0A0;
+	height: 24rem;
+	overflow: hidden;
+}
+.activity figure img {
+	width: 100%;
+}
+.activity .add_border {
+	border-left: 1px solid #FFF;
+}
+.activity.extend {
+
+}
+.banner {
+	background: #DDD;
+}
+.banner header {
+	color: #FFF;
+	background: #AAA;
+	line-height: 8;
+}
+.banner section {
+	padding: 1.5rem 0;
+}
+.banner section ul {
+	list-style: none;
+}
+.banner section ul.inline li {
+	margin-right: 1rem;
+}

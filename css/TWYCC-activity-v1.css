@@ -1,0 +1,18 @@
+#banner {
+	text-align: center;
+	background: #DDD;
+	color: #666;
+}
+#banner h1 {
+	padding: 1rem;
+}
+#relative section header h2 {
+	display: inline;
+}
+#relative section header span.date {
+	display: inline;
+	padding-left: 2rem;
+}
+#relative section p:after {
+	content: '更多...'
+}
