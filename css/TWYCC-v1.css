@@ -1,11 +1,23 @@
 html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
     font-family: Arial, "微軟正黑體", msjh, "Microsoft JhengHei", sans-serif;
 }
+.pure-g [class *= "pure-u"] {
+    padding: 0;
+}
 body {
+	position: relative;
 	margin: 0 auto;
 	width: 72rem;
 	line-height: 1.6;
 }
+h1, h2, h3, h4, h5, h6, p {
+	margin: 1rem 0;
+}
+article {
+	margin: 2rem 0;
+}
+
+/* Head Navigation Bar*/
 nav {
 	text-align: center;
 	padding: 0 3rem;
@@ -53,11 +65,45 @@ nav ul li ul.navdrop li a {
 nav ul li ul.navdrop li a:hover {
 	background: #FFF;
 }
-article {
-	margin: 3rem 0;
+
+/* Widgets */
+ul.unbullet {
+	list-style: none;
+	padding: 0;
+	margin: 0;
 }
-ul.inline li {
+ul.inline {
+	padding: 0;
+}
+ul.inline>li {
 	display: inline-block;
-	padding: 1rem;
-	background: #F00;
+	margin: 0 0.5rem;
+}
+#shareBtn {
+	text-align: right;
+}
+.box-1-5 {
+	margin: 1.5rem;
+}
+.box-2 {
+	margin: 2rem;
+}
+
+/* Line-title */
+.lineTitle {
+	text-align: center;
+	position: relative;
+}
+.lineTitle hr {
+	position: absolute;
+	width: 100%;
+	top: 1rem;
+	border: 1.6rem;
+	background: #AAA;
+	height: 1px;
+	z-index: -1;
+}
+.lineTitle span {
+	padding: 0 2rem;
+	background: #FFF;
 }

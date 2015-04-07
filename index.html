@@ -20,11 +20,11 @@
 
 <body>
 <header>[TWYCC LOGO]</header>
-<nav>
-	<ul id="main">
+<nav id="main">
+	<ul>
 		<li><a class="now" href="#">首頁</a></li>
 		<li class="navdropHead">
-			<a href="activity.html">活動企劃</a>
+			<a href="#">活動企劃</a>
 			<ul class="navdrop">
 				<li><a href="activity.html">政策研究</a></li>
 				<li><a href="activity.html">氣候行動</a></li>
@@ -39,75 +39,129 @@
 		<li class="navdropHead">
 			<a href="about.html">關於我們</a>
 			<ul class="navdrop">
-				<li><a href="about.html">我們是誰</a></li>
-		    	<li><a href="about.html">團隊介紹</a></li>
-		    	<li><a href="about.html">大事紀</a></li>
-		    	<li><a href="about.html">活動成果</a></li>
-		    	<li><a href="about.html">聯絡我們</a></li>
-		    	<li><a href="about.html">加入我們</a></li>
+				<li><a href="about.html#who">我們是誰</a></li>
+		    	<li><a href="about.html#staff">團隊介紹</a></li>
+		    	<li><a href="about.html#event">大事紀</a></li>
+		    	<li><a href="about.html#perform">活動成果</a></li>
+		    	<li><a href="about.html#contact">聯絡我們</a></li>
+		    	<li><a href="about.html#join">加入我們</a></li>
 			</ul>
 		</li>
 	</ul>
 </nav>
-<div id="slide"></div>
+<div id="slider">
+	<div id="sliderBlock">
+		<img src=""/>
+		<img src=""/>
+		<img src=""/>
+		<img src=""/>
+		<img src=""/>
+	</div>
+	<div id="sliderBtn">
+		<img src="" class="sliderBtnIcn"/>
+		<img src="" class="sliderBtnIcn"/>
+		<img src="" class="sliderBtnIcn"/>
+		<img src="" class="sliderBtnIcn"/>
+		<img src="" class="sliderBtnIcn"/>
+	</div>
+</div>
+<div id="shareBtn">
+	<ul class="inline">
+		<li><a href="#">[icn-facebook]</a></li>
+		<li><a href="#">[icn-peopo]</a></li>
+		<li><a href="#">[icn-youtube]</a></li>
+	</ul>
+</div> 
 <article>
-<article class="pure-g">
-	<header class="pure-u-1-1"><h1><span>活動企劃</span></h1><hr></header>
-	<a href="activity.html" class="pure-u-1-1 activity">
-		<div class="pure-g">
-			<header class="pure-u-1-3"><h2>政策研究</h2></header>
-			<figure class="pure-u-2-3"></figure>
-		</div>
-	</a>
-	<a href="activity.html" class="pure-u-1-1 pure-g activity">
-		<div class="pure-g">
-			<header class="pure-u-1-3"><h2>氣候行動</h2></header>
-			<figure class="pure-u-2-3"></figure>
-		</div>
-	</a>
-	<a href="activity.html" class="pure-u-1-3 activity">
-		<header class="pure-u-1-1"><h2>綠色工作(Green Job)</h2></header>
-		<figure class="pure-u-1-1"></figure>
-	</a>
-	<a href="activity.html" class="pure-u-1-3 activity">
-		<header class="pure-u-1-1 add_border"><h2>COP</h2></header>
-		<figure class="pure-u-1-1 add_border"></figure>
-	</a>
-	<a href="activity.html" class="pure-u-1-3 activity">
-		<header class="pure-u-1-1 add_border"><h2>活動資訊</h2></header>
-		<figure class="pure-u-1-1 add_border"></figure>
-	</a>
+	<header class="lineTitle"><h1><span>活動企劃</span></h1><hr></header>
+	<section class="pure-g">
+		<a href="activity.html" class="pure-u-1-1 activity">
+			<div class="pure-g">
+				<header class="pure-u-1-3"><h2>政策研究</h2></header>
+				<figure class="pure-u-2-3"></figure>
+			</div>
+		</a>
+		<a href="activity.html" class="pure-u-1-1 pure-g activity">
+			<div class="pure-g">
+				<header class="pure-u-1-3"><h2>氣候行動</h2></header>
+				<figure class="pure-u-2-3"></figure>
+			</div>
+		</a>
+		<a href="activity.html" class="pure-u-1-3 activity">
+			<header class="pure-u-1-1"><h2>綠色工作(Green Job)</h2></header>
+			<figure class="pure-u-1-1"></figure>
+		</a>
+		<a href="activity.html" class="pure-u-1-3 activity">
+			<header class="pure-u-1-1 add_border"><h2>COP</h2></header>
+			<figure class="pure-u-1-1 add_border"></figure>
+		</a>
+		<a href="activity.html" class="pure-u-1-3 activity">
+			<header class="pure-u-1-1 add_border"><h2>活動資訊</h2></header>
+			<figure class="pure-u-1-1 add_border"></figure>
+		</a>
+	</section>
 </article>
 <article class="pure-g banner">
 	<header class="pure-u-2-5"><h1>現在就能支持我們</h1></header>
 	<section class="pure-u-3-5">
-		<ul>
-			<li>聯絡人：秘書長　沈軒宇</li>
-			<li>聯絡信箱：service@twycc.org.tw</li>
-			<li>請務必將您的單位、姓名、聯絡方式，寄到我們的信箱，讓我們進一步與您聯繫。</li>
-		</ul>
-		<ul class="inline">
-			<li>[icn]</li>
-			<li>[icn]</li>
-			<li>[icn]</li>
-		</ul>
+		<div class="box-1-5">
+			<ul class="unbullet">
+				<li>聯絡人：秘書長　許莞庭</li>
+				<li>聯絡信箱：service@twycc.org.tw</li>
+				<li>請務必將您的單位、姓名、聯絡方式，寄到我們的信箱，讓我們進一步與您聯繫。</li>
+			</ul>
+			<ul class="inline">
+				<li><a href="#">[ibon]</a></li>
+				<li class="moreinfo">
+					<a href="#">[atm]</a>
+					<aside>
+						<ul class="unbullet">
+							<h4>【匯款帳號】</h4>
+							<li>華南銀行信義分行  (008)</li>
+							<li>匯款帳戶：119-10-0076721</li>
+							<li>戶名：社團法人台灣青年氣候聯盟</li>
+						</ul>
+					</aside>
+				</li>
+				<li><a href="#">[paypal]</a></li>
+			</ul>
+		</div>
 	</section>
 </article>
 <article class="pure-g banner">
 	<header class="pure-u-2-5"><h1>合作夥伴</h1></header>
 	<section class="pure-u-3-5">
-		<ul class="inline">
-			<li>[icn]</li>
-			<li>[icn]</li>
-			<li>[icn]</li>
-			<li>[icn]</li>
-			<li>[icn]</li>
-		</ul>
+		<div class="box-1-5">
+			<ul class="inline">
+				<li>[icn]</li>
+				<li>[icn]</li>
+				<li>[icn]</li>
+				<li>[icn]</li>
+				<li>[icn]</li>
+			</ul>
+		</div>
 	</section>
 </article>
 <footer>
 </footer>
 <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 <script src="./js/TWYCC-nav-v1.js"></script>
+<script src="./js/TWYCC-slider-v1.js"></script>
+<script>
+jQuery(document).ready(function() {
+	/* More Information */
+	$('.moreinfo').each(function(){
+		$(this).mouseenter(moreinfoAppear);
+		$(this).mouseleave(moreinfoHide);
+	});
+
+	function moreinfoAppear() {
+		$('aside',$(this)).css('display','block');
+	};
+	function moreinfoHide() {
+		$('aside',$(this)).css('display','none');
+	};
+});
+</script>
 </body>
 </html>

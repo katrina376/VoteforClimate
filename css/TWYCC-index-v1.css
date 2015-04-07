@@ -1,20 +1,17 @@
-article header {
+/* Slider */
+#slider {
+	overflow: hidden;
+}
+#sliderBlock {
+}
+#sliderBtn {
 	text-align: center;
-	position: relative;
 }
-article hr {
-	position: absolute;
-	width: 100%;
-	top: 2.4rem;
-	border: 1.6rem;
-	background: #AAA;
-	height: 1px;
-	z-index: -1;
+#sliderBtn .sliderBtnIcn {
+	margin: 0.5rem;
 }
-article span {
-	padding: 0 2rem;
-	background: #FFF;
-}
+
+/* Activity */
 .activity {
 	background: #AAA;
 	height: 24rem;
@@ -22,6 +19,7 @@ article span {
 	margin: 0.5rem 0;
 }
 .activity header {
+	text-align: center;
 	background: #DDD;
 	color: #666;
 }
@@ -39,20 +37,26 @@ article span {
 .activity.extend {
 
 }
+
+/* Banner */
 .banner {
 	background: #DDD;
 }
 .banner header {
+	text-align: center;
 	color: #FFF;
 	background: #AAA;
 	line-height: 8;
+	padding: 10rem;
 }
 .banner section {
-	padding: 1.5rem 0;
 }
-.banner section ul {
-	list-style: none;
+.banner section aside {
+	display: none;
+	position: absolute;
+	background: #FFF;
+	padding: 1rem;
 }
-.banner section ul.inline li {
-	margin-right: 1rem;
+.banner section aside ul h4 {
+	margin: 0;
 }

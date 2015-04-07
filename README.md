@@ -21,6 +21,7 @@
 
 ## 最新進度
 - 2015.3.2: 更新「首頁」、「活動企劃」、「關於我們」的template
+- 2015.4.7: 新增「首頁」slider動畫
 
 ## 相關連結
 Hackpad: https://g0v.hackpad.com/-Vote-for-Climate-4ac9ap7zhrn

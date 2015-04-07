@@ -1,17 +1,17 @@
-article header {
+.lineTitle {
 	text-align: center;
 	position: relative;
 }
-article hr {
+.lineTitle hr {
 	position: absolute;
 	width: 100%;
-	top: 2.4rem;
+	top: 1rem;
 	border: 1.6rem;
 	background: #AAA;
 	height: 1px;
 	z-index: -1;
 }
-article span {
+.lineTitle span {
 	padding: 0 2rem;
 	background: #FFF;
 }
