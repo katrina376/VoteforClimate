@@ -20,8 +20,9 @@
   6. 加入我們
 
 ## 最新進度
-- 2015.3.2: 更新「首頁」、「活動企劃」、「關於我們」的template
-- 2015.4.7: 新增「首頁」slider動畫
+- 2015.3.2:  更新「首頁」、「活動企劃」、「關於我們」的template
+- 2015.4.7:  新增「首頁」slider動畫
+- 2015.4.27: 初步完成彩色版本、新增「環境串聯地圖」、「TWYCC活動日曆」的template
 
 ## 相關連結
 Hackpad: https://g0v.hackpad.com/-Vote-for-Climate-4ac9ap7zhrn
