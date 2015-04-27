@@ -1,8 +1,47 @@
 /* Slider */
 #slider {
 	overflow: hidden;
+	position: relative;
 }
 #sliderBlock {
+	overflow: hidden;
+	position: relative;
+	width: 360rem;
+	height: 36rem;
+}
+#sliderBlock a {
+	position: relative;
+	max-width: 72rem;
+	min-width: 64rem;
+	height: 36rem;
+}
+#sliderBlock a header {
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	width: 24rem;
+	height: 36rem;
+	background: #FFF;
+	color: #FFF;
+}
+#sliderBlock a header h1 {
+	color: #FFF;
+}
+#sliderBlock a header h1 {
+	margin: 8rem 0;
+	padding: 2rem;
+}
+#sliderBlock a header aside {
+	padding: 2rem;
+	position: absolute;
+}
+#sliderBlock a header aside .date {
+	font-size: 2rem;
+	font-weight: bold;
+}
+#sliderBlock a header aside .source {
+	font-weight: bold;
 }
 #sliderBtn {
 	text-align: center;
@@ -13,18 +52,27 @@
 
 /* Activity */
 .activity {
-	background: #AAA;
 	height: 24rem;
 	overflow: hidden;
-	margin: 0.5rem 0;
+	margin: 1rem 0;
 }
-.activity header {
+.activity.expand header {
+	height: 100%;
+}
+.activity header h2 {
+	margin: 0;
+	padding: 1rem 0;
+	display: block;
+	width: 100%;
 	text-align: center;
-	background: #DDD;
-	color: #666;
+	background: #D8D8D8;
+}
+.activity.expand header section {
+	padding: 1rem;
+	color: #000;
+	height: 16rem;
 }
 .activity figure {
-	background: #0A0;
 	height: 24rem;
 	overflow: hidden;
 }
@@ -34,22 +82,34 @@
 .activity .add_border {
 	border-left: 1px solid #FFF;
 }
-.activity.extend {
-
-}
 
 /* Banner */
 .banner {
-	background: #DDD;
+	background: #EEE;
 }
 .banner header {
+	position: relative;
 	text-align: center;
-	color: #FFF;
-	background: #AAA;
+	background: #4A91E0;
 	line-height: 8;
 	padding: 10rem;
 }
+.banner header h1 {
+	color: #FFF;
+}
+.banner header .triangle {
+	position: absolute;
+	top: 8rem;
+	right: -40px;
+	border-top: solid transparent 20px;
+	border-right: solid transparent 20px;
+	border-bottom: solid transparent 20px;
+	border-left: solid #4A91E0 20px;
+	width: 0px;
+	height: 0px;
+}
 .banner section {
+	padding: 3rem;
 }
 .banner section aside {
 	display: none;

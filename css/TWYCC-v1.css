@@ -4,66 +4,91 @@ html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
 .pure-g [class *= "pure-u"] {
     padding: 0;
 }
+figure {
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+figure img {
+	padding: 0;
+	margin: 0;
+	max-width: 100%;
+	max-height: 100%;
+}
 body {
 	position: relative;
 	margin: 0 auto;
-	width: 72rem;
+	max-width: 72rem;
+	min-width: 64rem;
 	line-height: 1.6;
 }
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, ul {
 	margin: 1rem 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #555;
 }
 article {
 	margin: 2rem 0;
 }
-
-/* Head Navigation Bar*/
-nav {
-	text-align: center;
-	padding: 0 3rem;
+a {
+	color: #93AC12;
 }
-nav ul {
+
+#page-head {
+	margin: 1rem 0 0 3rem;
+}
+/* Head Navigation Bar*/
+#page-nav {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+#page-nav ul {
 	padding: 0;
 	margin: 0;
 	list-style: none;
 }
-nav ul li {
+#page-nav ul li {
 	display: inline-block;
 }
-nav a {
-	display: inline-block;
-	padding: 1rem 2rem;
+#page-nav a {
+	display: block;
+	padding: 1rem 0;
 	text-align: center;
-	color: #000;
+	color: #454545;
 	text-decoration: none;
 }
-nav a:hover, nav a:active, nav a:visited {
-	color: #000;
+#page-nav a:active, #page-nav a:visited {
+	color: inherit;
 }
-nav a.now {
+#page-nav a:hover, #page-nav .now a {
+	color: #000;
 	font-weight: bold;
 }
-nav ul li ul.navdrop {
+#page-nav ul li ul.navdrop {
 	display: none;
 	position: absolute;
-	z-index: 10;
-	background: #DDD;
+	z-index: 30;
+	background: #4a91e0;
 	text-align: left;
 	overflow: hidden;
-	margin-left: 2rem;
+	margin-left: 0rem;
 }
-nav ul li ul.navdrop li {
+#page-nav ul li ul.navdrop li {
 	display: list-item;
 }
-nav ul li ul.navdrop li a {
+#page-nav ul li ul.navdrop li a {
+	font-weight: normal;
 	text-align: left;
 	padding: 0.2rem 1rem;
 	margin: 0.3rem 0;
 	width: 100%;
 	font-size: 1rem;
+	color: #000;
 }
-nav ul li ul.navdrop li a:hover {
+#page-nav ul li ul.navdrop li a:hover {
 	background: #FFF;
+	font-weight: normal;
 }
 
 /* Widgets */
@@ -88,18 +113,25 @@ ul.inline>li {
 .box-2 {
 	margin: 2rem;
 }
+.box-3 {
+	margin: 3rem;
+}
+.box-5 {
+	margin: 5rem;
+}
 
 /* Line-title */
 .lineTitle {
 	text-align: center;
 	position: relative;
+	margin: 2rem 0;
 }
 .lineTitle hr {
 	position: absolute;
 	width: 100%;
 	top: 1rem;
 	border: 1.6rem;
-	background: #AAA;
+	background: #666;
 	height: 1px;
 	z-index: -1;
 }

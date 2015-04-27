@@ -3,6 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 <title>TWYCC 台灣青年氣候聯盟</title>
+<link href="./img/favicon.ico" type="image/x-icon" rel="shortcut icon">
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
 </script>
@@ -11,7 +12,10 @@
 <link rel="stylesheet" href="http://yui.yahooapis.com/combo?pure/0.5.0/base-min.css&pure/0.5.0/grids-min.css&pure/0.5.0/grids-responsive-old-ie-min.css">
 <![endif]-->
 <!--[if gt IE 8]><!-->
+<!--
 <link rel="stylesheet" href="http://yui.yahooapis.com/combo?pure/0.5.0/base-min.css&pure/0.5.0/grids-min.css&pure/0.5.0/grids-responsive-min.css">
+-->
+<link rel="stylesheet" href="./css/pure-min.css">
 <!--<![endif]-->
 <!--<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">-->
 <link rel="stylesheet" href="./css/TWYCC-v1.css">
@@ -19,13 +23,15 @@
 </head>
 
 <body>
-<header>[TWYCC LOGO]</header>
-<nav>
-	<ul id="main">
-		<li><a href="index.html">首頁</a></li>
-		<li class="navdropHead now">
-			<a href="#">活動企劃</a>
-			<ul class="navdrop">
+<header id="page-head">
+	<a href="index.html"><img src="img/logo-header.png" alt="TWYCC"></a>
+</header>
+<nav id="page-nav" class="pure-g">
+	<ul>
+		<li class="pure-u-1-6"><a href="index.html">首頁</a></li>
+		<li class="pure-u-1-6 navdropHead now">
+			<a href="activity.html">活動企劃</a>
+			<ul class="pure-u-1-6 navdrop">
 				<li><a href="activity.html">政策研究</a></li>
 				<li><a href="activity.html">氣候行動</a></li>
 				<li><a href="activity.html">綠色工作(Green Job)</a></li>
@@ -33,24 +39,25 @@
 				<li><a href="activity.html">活動資訊</a></li>
 			</ul>
 		</li>
-		<li><a href="climatechange.html">認識氣候變遷</a></li>
-		<li><a href="map.html">環境串聯地圖</a></li>
-		<li><a href="calendar.html">TWYCC活動日曆</a></li>
-		<li class="navdropHead">
+		<li class="pure-u-1-6"><a href="climatechange.html">認識氣候變遷</a></li>
+		<li class="pure-u-1-6"><a href="map.html">環境串聯地圖</a></li>
+		<li class="pure-u-1-6"><a href="calendar.html">TWYCC活動日曆</a></li>
+		<li class="pure-u-1-6 navdropHead">
 			<a href="about.html">關於我們</a>
-			<ul class="navdrop">
+			<ul class="pure-u-1-6 navdrop">
 				<li><a href="about.html#who">我們是誰</a></li>
 		    	<li><a href="about.html#staff">團隊介紹</a></li>
 		    	<li><a href="about.html#event">大事紀</a></li>
-		    	<li><a href="about.html#peform">活動成果</a></li>
+		    	<li><a href="about.html#perform">活動成果</a></li>
 		    	<li><a href="about.html#contact">聯絡我們</a></li>
 		    	<li><a href="about.html#join">加入我們</a></li>
 			</ul>
 		</li>
 	</ul>
 </nav>
+
 <header id="banner">
-	<figure></figure>
+	<figure><img src="./img/img-ex-4-3.jpg"/></figure>
 	<h1>這是標題</h1>
 </header>
 <article>
@@ -69,17 +76,29 @@
 </article>
 <article id="relative">
 	<header><h1>相關文章</h1></header>
-	<section>
+	<section class="wrapper">
 		<header>
 			<h2>相關文章標題</h2>
 			<span class="date">2015/1/5</span>
 		</header>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<a href="#" onclick="javascript: alert('just a dummy link...'); return false;" title="read more" class="readmore">Read more &raquo;</a>
 	</section>
 </article>
 <footer>
 </footer>
-<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="./js/jquery-1.11.2.min.js"></script>
 <script src="./js/TWYCC-nav-v1.js"></script>
+<script src="./js/jquery.dotdotdot.min.js" type="text/javascript"></script>
+<script>
+/*$(document).ready(function(){
+	$(".wrapper").dotdotdot({
+		after: "a.readmore",
+		wrap: 'word',
+		watch: true,
+	});
+});
+</script>
 </body>
 </html>

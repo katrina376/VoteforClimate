@@ -6,9 +6,11 @@ jQuery(document).ready(function() {
 	});
 
 	function navdropAppear() {
-		$('ul',$(this)).css('display','block');
+		// $('ul',$(this)).css('display','block');
+		$('ul',$(this)).slideToggle(200);
 	};
 	function navdropHide() {
-		$('ul',$(this)).css('display','none');
+		// $('ul',$(this)).css('display','none');
+		$('ul',$(this)).slideToggle(200);
 	};
 });

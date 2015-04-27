@@ -3,6 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 <title>TWYCC 台灣青年氣候聯盟</title>
+<link href="./img/favicon.ico" type="image/x-icon" rel="shortcut icon">
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
 </script>
@@ -11,21 +12,25 @@
 <link rel="stylesheet" href="http://yui.yahooapis.com/combo?pure/0.5.0/base-min.css&pure/0.5.0/grids-min.css&pure/0.5.0/grids-responsive-old-ie-min.css">
 <![endif]-->
 <!--[if gt IE 8]><!-->
+<!--
 <link rel="stylesheet" href="http://yui.yahooapis.com/combo?pure/0.5.0/base-min.css&pure/0.5.0/grids-min.css&pure/0.5.0/grids-responsive-min.css">
+-->
+<link rel="stylesheet" href="./css/pure-min.css">
 <!--<![endif]-->
-<!--<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">-->
 <link rel="stylesheet" href="./css/TWYCC-v1.css">
 <link rel="stylesheet" href="./css/TWYCC-about-v1.css">
 </head>
 
 <body>
-<header>[TWYCC LOGO]</header>
-<nav>
-	<ul id="main">
-		<li><a href="index.html">首頁</a></li>
-		<li class="navdropHead">
+<header id="page-head">
+	<a href="index.html"><img src="img/logo-header.png" alt="TWYCC"></a>
+</header>
+<nav id="page-nav" class="pure-g">
+	<ul>
+		<li class="pure-u-1-6"><a href="index.html">首頁</a></li>
+		<li class="pure-u-1-6 navdropHead">
 			<a href="activity.html">活動企劃</a>
-			<ul class="navdrop">
+			<ul class="pure-u-1-6 navdrop">
 				<li><a href="activity.html">政策研究</a></li>
 				<li><a href="activity.html">氣候行動</a></li>
 				<li><a href="activity.html">綠色工作(Green Job)</a></li>
@@ -33,51 +38,262 @@
 				<li><a href="activity.html">活動資訊</a></li>
 			</ul>
 		</li>
-		<li><a href="climatechange.html">認識氣候變遷</a></li>
-		<li><a href="map.html">環境串聯地圖</a></li>
-		<li><a href="calendar.html">TWYCC活動日曆</a></li>
-		<li class="navdropHead now">
+		<li class="pure-u-1-6"><a href="climatechange.html">認識氣候變遷</a></li>
+		<li class="pure-u-1-6"><a href="map.html">環境串聯地圖</a></li>
+		<li class="pure-u-1-6"><a href="calendar.html">TWYCC活動日曆</a></li>
+		<li class="pure-u-1-6 navdropHead now">
 			<a href="#">關於我們</a>
-			<ul class="navdrop">
-				<li><a href="#who">我們是誰</a></li>
-		    	<li><a href="#staff">團隊介紹</a></li>
-		    	<li><a href="#event">大事紀</a></li>
-		    	<li><a href="#perform">活動成果</a></li>
-		    	<li><a href="#contact">聯絡我們</a></li>
-		    	<li><a href="#join">加入我們</a></li>
+			<ul class="pure-u-1-6 navdrop">
+				<li><a href="about.html#who">我們是誰</a></li>
+		    	<li><a href="about.html#staff">團隊介紹</a></li>
+		    	<li><a href="about.html#event">大事紀</a></li>
+		    	<li><a href="about.html#perform">活動成果</a></li>
+		    	<li><a href="about.html#contact">聯絡我們</a></li>
+		    	<li><a href="about.html#join">加入我們</a></li>
 			</ul>
 		</li>
 	</ul>
 </nav>
 <figure></figure>
 <article>
-	<header class="lineTitle"><h1><span>我們是誰</span></h1><hr><a id="who"></a></header>
+	<header class="lineTitle"><a id="who"></a><h1><span>我們是誰</span></h1><hr></header>
 	<section>
-		<h4>Lorem ipsum</h4>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<h4>TWYCCer [twɪkɜr]</h4>
+		<p>中文名為「推客」，泛指對氣候變遷、環境議題有熱情且希望成為氣候行動「推手」之青年。</p>
+		<p>推客們用熱情、活力、創意、勇氣將環境議題「推」至社會大眾，「推」出舒適圈，落實氣候正義。</p>
+		<p>推客，是一種理念，一個追求氣候正義的途徑，讓社會「推」開氣候變遷的門扉，讓你、我、所有的人都成為推客，期望「推客」們把世界「推」進一步。讓TWYCC成為推客們建構的平台，凝聚青年「推」力，齊「推」動時代巨輪，帶動社會改變。</p>
 	</section>
 </article>
 <article>
-	<header class="lineTitle"><h1><span>團隊介紹</span></h1><hr><a id="staff"></a></header>
-	<section class="pure-g">
-		<figure class="pure-u-1-2"></figure>
+	<header class="lineTitle"><a id="staff"></a><h1><span>團隊介紹</span></h1><hr></header>
+	<ul class="pure-g" id="staff-table">
+		<li class="pure-u-1-2">
+			<figure>
+				<img src="./img/staff01.jpg"/>
+			</figure>
+			<ul class="unbullet">
+				<li class="name">廖士婷 Shih-Ting Liao</li>
+				<li class="position">秘書長 Director of Administration</li>
+				<li class="contact">service@twycc.org.tw</li>
+			</ul>
+		</li>
+		<li class="pure-u-1-2">
+			<figure>
+				<img src="./img/staff02.jpg"/>
+			</figure>
+			<ul class="unbullet">
+				<li class="name">謝尚融 Shang-Jung Hsieh</li>
+				<li class="position">政策研究部部長 Director of Policy and Research</li>
+				<li class="contact">ps@twycc.org.tw</li>
+			</ul>
+		</li>
+		<li class="pure-u-1-2">
+			<figure>
+				<img src="./img/staff03.jpg"/>
+			</figure>
+			<ul class="unbullet">
+				<li class="name">陳膺帆 Ying-Fan Chen</li>
+				<li class="position">氣候行動部部長 Director of Climate Action</li>
+				<li class="contact">ca@twycc.org.tw</li>
+			</ul>
+		</li>
+		<li class="pure-u-1-2">
+			<figure>
+				<img src="./img/staff04.jpg"/>
+			</figure>
+			<ul class="unbullet">
+				<li class="name">羅珮芸 Pei Yun Lo</li>
+				<li class="position">公關財務長 Director of Public Relations and Finance</li>
+				<li class="contact">pr@twycc.org.tw</li>
+			</ul>
+		</li>
+	</ul>
+</article>
+<article>
+	<header class="lineTitle"><a id="event"></a><h1><span>大事記</span></h1><hr></header>
+	<figure>
+		<img src="./img/event.jpg"/>
+	</figure>
+</article>
+<article>
+	<header class="lineTitle"><a id="perform"></a><h1><span>活動成果</span></h1><hr></header>
+</article>
+<article>
+	<header class="lineTitle"><a id="contact"></a><h1><span>聯絡我們</span></h1><hr></header>
+	<section>
+		<p>多謝您的支持與幫助，如果對於我們有任何建議或想法，我們誠心地歡迎您的來信指教，以下是我們的聯絡方式。</p>
+		<ul class="unbullet">
+			<li>Address：台北市信義路二段181巷3號2F</li>
+			<li>Email：<a href="mailto:service@twycc.org.tw">service@twycc.org.tw</a></li>
+			<li>Twitter：<a href="http://twitter.com/#!/TWYCC" target="_BLANK">http://twitter.com/#!/TWYCC</a></li>
+			<li>FaceBook：<a href="https://www.facebook.com/rocktwycc" target="_BLANK">https://www.facebook.com/rocktwycc</a></li>
+		</ul>
 	</section>
 </article>
 <article>
-	<header class="lineTitle"><h1><span>大事記</span></h1><hr><a id="event"></a></header>
-</article>
-<article>
-	<header class="lineTitle"><h1><span>活動成果</span></h1><hr><a id="perform"></a></header>
-</article>
-<article>
-	<header class="lineTitle"><h1><span>聯絡我們</span></h1><hr><a id="contact"></a></header>
-</article>
-<article>
-	<header class="lineTitle"><h1><span>加入我們</span></h1><hr><a id="join"></a></header>
+	<header class="lineTitle"><a id="join"></a><h1><span>加入我們</span></h1><hr></header>
+	<figure>
+		<img src="./img/recruit.jpg"/>
+	</figure>
+	<section>
+		<p>期待你的加入！</p>
+		<p>我們將定期舉辦各種議題工作坊、技巧工作坊，還有與環境團體、各路夥伴的聚會活動，讓大家為氣候變遷做出貢獻的同時，也能增長知識、交遊廣闊，更有智慧！</p>
+		<p>注意事項：無給職、志工性質、面試</p>
+	</section>
+	<section>
+		<h2>一、報名方式：</h2>
+		<ul>
+			<li>執行團隊成員報名：請填寫履歷表，並寄至service@twycc.org.tw</li>
+			<li>志工或實習報名：請填寫此表單即可。</li>
+		</ul>
+		<p>執行團隊成員定義：為TWYCC執行組織運作的成員，包含各部門成員、各專案負責人／組長，每個月大約花三十小時在TWYCC上。請斟酌自我能力。</p>
+		<p>福利包括：可參與TWYCC內部教育培訓、可代表TWYCC參與對外活動、取得資訊優先權、擁有TWYCC舉辦活動有優先參與權。</p>
+		<p>而志工分為兩種：專案型志工和活動型志工。</p>
+		<p>活動型志工是當有活動的時候才會通知和詢問您是否能幫忙，ＴＷＹＣＣ主辦或協辦活動有優先參與權。專案型志工是長期待在一個專案並和成員一同討論專案事項，但相對的付出時間也較多，大概一個月10~15小時，除了ＴＷＹＣＣ主辦或協辦活動有優先參與權外還能參與內部培訓。</p>
+	</section>
+	<section>
+		<h2>二、徵人資訊：</h2>
+		<ol>
+			<li>網路宣傳：
+				<ul>
+					<li>工作內容：管理TWYCC官網文章、FB粉絲專頁發文、電子報發布、發想主題系列文章</li>
+					<li>需求條件：
+						<ul>
+							<li>妙筆生花</li>
+							<li>創意力十足</li>
+							<li>可提供相關文字作品予以參考</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>COP21-動畫設計部門：
+    			<ul>
+					<li>工作內容：製作國際訊息相關動畫、對外宣傳影片、小故事宣傳動畫等，將大量曝光在國際媒體</li>
+					<li>需求條件：
+						<ul>
+							<li>熟悉各式繪圖及動畫軟體軟體能力者</li>
+ 							<li>可提供相關作品集予以參考</li>
+ 							<li>能與團隊配合時程產出成品</li>
+ 							<li>有高度自主性</li>
+ 						</ul>
+ 					</li>
+ 				</ul>
+    		</li>
+    		<li>設計組夥伴：
+    			<ul>
+					<li>工作內容：負責官網版面設計、專案活動海報等宣傳品設計，及參與公關部一般宣傳行銷活動</li>
+					<li>需求條件：
+						<ul>
+							<li>熟悉各式繪圖、軟體能力者（Photoshop、Illustrator等）</li>
+ 							<li>可提供相關作品集予以參考</li>
+ 							<li>創意力十足</li>
+ 							<li>可負責相關繪圖軟體設計等教學</li>
+ 						</ul>
+ 					</li>
+ 				</ul>
+    		</li>
+    		<li>公關活動企劃：
+    			<ul>
+					<li>工作內容：定期舉辦Social Event、理監事會議，與TWYCC的合作夥伴和友好企業聯繫、接洽，及參與公關部一般性宣傳行銷活動</li>
+					<li>需求條件：
+						<ul>
+							<li>善於溝通</li>
+ 							<li>有籌辦活動的經驗</li>
+ 						</ul>
+ 					</li>
+ 				</ul>
+    		</li>
+    		<li>財務部夥伴：
+    			<ul>
+					<li>工作內容：定期搜尋籌募機會，連結企業資源、輔助各專案籌募、規劃財務等事宜、舉辦籌募活動，及參與財務部定期討論</li>
+					<li>需求條件：
+						<ul>
+							<li>有相關活動籌募經驗</li>
+ 							<li>對企業籌募、民眾籌募或綠色企業合作有高度興趣者</li>
+ 						</ul>
+ 					</li>
+ 				</ul>
+    		</li>
+    		<li>綠色企業合作專案：
+    			<ul>
+					<li>工作內容：發想、落實TWYCC與綠色企業的創新合作模式，舉辦氣候變遷知識的互動工作坊</li>
+					<li>需求條件：
+						<ul>
+							<li>對行銷、舉辦活動有興趣並有相關經驗</li>
+ 							<li>對於企業社會責任有了解</li>
+ 							<li>創意力十足</li>
+ 							<li>有團隊合作的經驗，並樂於團隊合作</li>
+ 							<li>對和綠色企業合作有高度興趣者</li>
+ 						</ul>
+ 					</li>
+ 				</ul>
+    		</li>
+    		<li>氣候選戰-各校負責人：
+    			<ul>
+					<li>工作內容：氣候選戰校園拍照串聯、負責招募校園氣候選戰小組、活動宣傳</li>
+					<li>需求條件：
+						<ul>
+							<li>有舉辦大型活動的經驗</li>
+ 							<li>熟悉團隊合作的模式</li>
+ 							<li>對於環境議題與時事有一定的敏感度</li>
+ 							<li>基本籌募管道了解</li>
+ 						</ul>
+ 					</li>
+ 				</ul>
+    		</li>
+    		<li>氣候選戰-專案管理人：
+    			<ul>
+					<li>工作內容：統合各校進行校園串連行動、邀請聯絡環團加入、監督各工作小組專案進度</li>
+					<li>需求條件：
+						<ul>
+							<li>具備或有心學習發起運動的能力</li>
+ 							<li>具備或有心學習動員行動的技巧</li>
+ 							<li>對於環境政策與時事有一定的敏感度</li>
+ 							<li>樂於與友好團體聯繫、交流</li>
+ 						</ul>
+ 					</li>
+ 				</ul>
+    		</li>
+    		<li>COP21 Taiwan Base：
+    			<ul>
+					<li>工作內容：(1)撰寫、發布新聞稿 (2)英文文章翻譯、潤稿 (3)與代表團遠距一起追蹤談判進度</li>
+					<li>需求條件：
+						<ul>
+							<li>對於國際氣候談判有興趣</li>
+ 							<li>具備基礎英文能力</li>
+ 							<li>對於活動規劃有經驗或是想要學習</li>
+ 						</ul>
+ 					</li>
+ 				</ul>
+    		</li>
+    		<li>政策研究小組成員：
+    			<ul>
+					<li>工作內容：閱讀、研究、分析國內外的氣候政策</li>
+					<li>需求條件：
+						<ul>
+							<li>就讀於環境、氣候科學、公共政策或法律等相關科系，或修習相關學程</li>
+ 							<li>撰寫部落格、環境報導或學術報告的經驗</li>
+ 						</ul>
+ 					</li>
+ 				</ul>
+    		</li>
+    		<li>水水一百專案：
+    			<ul>
+					<li>工作內容：協助舉辦認識在地水資源的活動，包刮活動場勘、發現問題、籌畫過程。</li>
+					<li>需求條件：
+						<ul>
+							<li>認同「水水一百」希望能讓年輕人更接近更認識台灣土地水資源的理念。</li>
+ 							<li>能參與討論、出席會議者。</li>
+ 						</ul>
+ 					</li>
+ 				</ul>
+    		</li>
+		</ol>
+	</section>
 </article>
 <footer>
 </footer>
-<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="./js/jquery-1.11.2.min.js"></script>
 <script src="./js/TWYCC-nav-v1.js"></script>
 </body>
 </html>

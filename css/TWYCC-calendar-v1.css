@@ -1,0 +1,8 @@
+#calendar {
+	position: relative;
+	display: block;
+	width: 64rem;
+	margin: 0 auto;
+	height: 42rem;
+	border: none;
+}

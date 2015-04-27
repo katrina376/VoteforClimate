@@ -1,0 +1,19 @@
+form {
+	width: 100%;
+	text-align: center;
+	margin: 2rem auto;
+}
+form input {
+	width: 50%;
+}
+#googleMap {
+	height: 64rem;
+}
+#activity ul li {
+	display: block;
+	margin: 1rem 0 1rem 2rem;
+}
+#activity ul li aside{
+	font-size: 70%;
+	color: 
+}
